@@ -11,6 +11,7 @@ import { ArticlesService } from './articles.service';
 import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SharedService } from './shared.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [	
@@ -20,11 +21,12 @@ import { SharedService } from './shared.service';
     ArticleListComponent,
     AboutComponent,
     ArticleComponent,
-      NotFoundComponent
+      NotFoundComponent,
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [ArticlesService,SharedService],
   bootstrap: [AppComponent]

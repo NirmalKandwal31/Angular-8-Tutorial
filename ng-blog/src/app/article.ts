@@ -1,4 +1,4 @@
-export class Article {
+ export class Article {
     id: number;
     title = '';
     key = '';
@@ -6,4 +6,4 @@ export class Article {
     content = '';
     description = '';
     imageUrl = '';
-}
+} 

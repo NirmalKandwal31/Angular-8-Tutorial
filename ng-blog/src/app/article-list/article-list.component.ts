@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Article } from '../article';
 import { ArticlesService } from '../articles.service';
-import { MockArticles } from '../mock-articles';
+//import { MockArticles } from '../mock-articles';
 import { SharedService } from '../shared.service';
 
 @Component({

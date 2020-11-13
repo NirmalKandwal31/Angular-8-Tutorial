@@ -4,13 +4,13 @@
 
 <div class="article">
   <div class="article-image">
-    <img [src]='article.imageUrl'>
+    <img [src]='article.imageUrl'/>
   </div>
   
-  <h3 class="titleS">
+  <h3 class="title">
       {{article.title}}
   </h3>
-  <div class="meta-info">{{article.date.toDateString()}}</div>
+  <div class="meta-info">{{article.date | date}}</div>
   <p [innerHTML]='article.content'></p>
   
 </div>
